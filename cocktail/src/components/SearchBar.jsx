@@ -1,12 +1,10 @@
-import React from "react";
-
-function SearchBar({ search, setSearch }) {
+function SearchBar({ value, onChange }) {
   return (
     <input
       type="text"
       placeholder="Search cocktails..."
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
     />
   );
 }
