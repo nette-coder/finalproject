@@ -19,7 +19,7 @@ export default function Favorites() {
       {favorites.length === 0 ? (
         <div className="empty">
           <p>You have not saved any cocktails yet.</p>
-          <Link to="/" className="btn btn--active">Browse cocktails</Link>
+          <Link to="/" className="btn btn--active">Browse Cocktails</Link>
         </div>
       ) : (
         <CardGrid drinks={favorites} />
